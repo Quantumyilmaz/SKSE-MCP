@@ -4,7 +4,7 @@ A header only library allowing development with [SKSE Menu Framework](https://ww
 ### Porting with Cmake
 
 #### Structure and Contents of Files
-Users need to have portfile.cmake and vcpkg.json files same as in this repo placed in cmake/ports/skse-mcp folder in their project.
+Users need to have `portfile.cmake` and `vcpkg.json` files same as in this repo placed in cmake/ports/skse-mcp folder in their project.
 
 #### CMake and vcpkg Integration
 ##### CMakeLists.txt
