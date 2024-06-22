@@ -1,5 +1,6 @@
-#include <windows.h>
+#pragma once
 
+#include <windows.h>
 #include <cassert>
 #include <codecvt>
 #include <locale>
