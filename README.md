@@ -12,6 +12,6 @@ Users need to have `portfile.cmake` and `vcpkg.json` files same as in this repo 
 
 `target_include_directories(${PROJECT_NAME} PRIVATE	${SKSE_MCP_INCLUDE_DIRS})`
 
-##### vcpkg.json
+##### vcpkg.json (in project directory and not in cmake/ports)
 
 Put `skse-mcp`in your `dependencies`.
