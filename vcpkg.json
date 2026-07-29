@@ -1,6 +1,6 @@
 {
   "name": "skse-mcp",
-  "version-string": "3.11.0",
+  "version-string": "3.11.1",
   "homepage": "https://github.com/QTR-Modding/SKSE-MCP",
   "license": "MIT",
   "dependencies": []
