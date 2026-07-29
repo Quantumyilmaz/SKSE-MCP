@@ -25,7 +25,7 @@ T GetMenuFrameworkFunction(LPCSTR name) {
 #define MENU_WINDOW SKSEMenuFramework::Model::WindowInterface*
 
 namespace ImGuiMCP {
-    typedef struct ImVec2 ImVec2;
+    struct ImVec2;
     struct ImVec2 {
         float x, y;
     };
@@ -306,82 +306,82 @@ namespace ImGuiMCP {
 #define IM_COL32_BLACK IM_COL32(0, 0, 0, 255)        // Opaque black
 #define IM_COL32_BLACK_TRANS IM_COL32(0, 0, 0, 0)    // Transparent black = 0x00000000
 
-    typedef struct ImDrawChannel ImDrawChannel;
-    typedef struct ImDrawCmd ImDrawCmd;
-    typedef struct ImDrawData ImDrawData;
-    typedef struct ImDrawList ImDrawList;
-    typedef struct ImDrawListSharedData ImDrawListSharedData;
-    typedef struct ImDrawListSplitter ImDrawListSplitter;
-    typedef struct ImDrawVert ImDrawVert;
-    typedef struct ImFont ImFont;
-    typedef struct ImFontAtlas ImFontAtlas;
-    typedef struct ImFontBuilderIO ImFontBuilderIO;
-    typedef struct ImFontConfig ImFontConfig;
-    typedef struct ImFontGlyph ImFontGlyph;
-    typedef struct ImFontGlyphRangesBuilder ImFontGlyphRangesBuilder;
-    typedef struct ImColor ImColor;
-    typedef struct ImGuiContext ImGuiContext;
-    typedef struct ImGuiIO ImGuiIO;
-    typedef struct ImGuiInputTextCallbackData ImGuiInputTextCallbackData;
-    typedef struct ImGuiKeyData ImGuiKeyData;
-    typedef struct ImGuiListClipper ImGuiListClipper;
-    typedef struct ImGuiOnceUponAFrame ImGuiOnceUponAFrame;
-    typedef struct ImGuiPayload ImGuiPayload;
-    typedef struct ImGuiPlatformIO ImGuiPlatformIO;
-    typedef struct ImGuiPlatformMonitor ImGuiPlatformMonitor;
-    typedef struct ImGuiPlatformImeData ImGuiPlatformImeData;
-    typedef struct ImGuiSizeCallbackData ImGuiSizeCallbackData;
-    typedef struct ImGuiStorage ImGuiStorage;
-    typedef struct ImGuiStyle ImGuiStyle;
-    typedef struct ImGuiTableSortSpecs ImGuiTableSortSpecs;
-    typedef struct ImGuiTableColumnSortSpecs ImGuiTableColumnSortSpecs;
-    typedef struct ImGuiTextBuffer ImGuiTextBuffer;
-    typedef struct ImGuiTextFilter ImGuiTextFilter;
-    typedef struct ImGuiViewport ImGuiViewport;
-    typedef struct ImGuiWindowClass ImGuiWindowClass;
-    typedef struct ImBitVector ImBitVector;
-    typedef struct ImRect ImRect;
-    typedef struct ImDrawDataBuilder ImDrawDataBuilder;
-    typedef struct ImGuiColorMod ImGuiColorMod;
-    typedef struct ImGuiContextHook ImGuiContextHook;
-    typedef struct ImGuiDataVarInfo ImGuiDataVarInfo;
-    typedef struct ImGuiDataTypeInfo ImGuiDataTypeInfo;
-    typedef struct ImGuiDockContext ImGuiDockContext;
-    typedef struct ImGuiDockRequest ImGuiDockRequest;
-    typedef struct ImGuiDockNode ImGuiDockNode;
-    typedef struct ImGuiDockNodeSettings ImGuiDockNodeSettings;
-    typedef struct ImGuiGroupData ImGuiGroupData;
-    typedef struct ImGuiInputTextState ImGuiInputTextState;
-    typedef struct ImGuiInputTextDeactivateData ImGuiInputTextDeactivateData;
-    typedef struct ImGuiLastItemData ImGuiLastItemData;
-    typedef struct ImGuiLocEntry ImGuiLocEntry;
-    typedef struct ImGuiMenuColumns ImGuiMenuColumns;
-    typedef struct ImGuiNavItemData ImGuiNavItemData;
-    typedef struct ImGuiNavTreeNodeData ImGuiNavTreeNodeData;
-    typedef struct ImGuiMetricsConfig ImGuiMetricsConfig;
-    typedef struct ImGuiNextWindowData ImGuiNextWindowData;
-    typedef struct ImGuiNextItemData ImGuiNextItemData;
-    typedef struct ImGuiOldColumnData ImGuiOldColumnData;
-    typedef struct ImGuiOldColumns ImGuiOldColumns;
-    typedef struct ImGuiPopupData ImGuiPopupData;
-    typedef struct ImGuiSettingsHandler ImGuiSettingsHandler;
-    typedef struct ImGuiStackSizes ImGuiStackSizes;
-    typedef struct ImGuiStyleMod ImGuiStyleMod;
-    typedef struct ImGuiTabBar ImGuiTabBar;
-    typedef struct ImGuiTabItem ImGuiTabItem;
-    typedef struct ImGuiTable ImGuiTable;
-    typedef struct ImGuiTableHeaderData ImGuiTableHeaderData;
-    typedef struct ImGuiTableColumn ImGuiTableColumn;
-    typedef struct ImGuiTableInstanceData ImGuiTableInstanceData;
-    typedef struct ImGuiTableTempData ImGuiTableTempData;
-    typedef struct ImGuiTableSettings ImGuiTableSettings;
-    typedef struct ImGuiTableColumnsSettings ImGuiTableColumnsSettings;
-    typedef struct ImGuiTypingSelectState ImGuiTypingSelectState;
-    typedef struct ImGuiTypingSelectRequest ImGuiTypingSelectRequest;
-    typedef struct ImGuiWindow ImGuiWindow;
-    typedef struct ImGuiWindowDockStyle ImGuiWindowDockStyle;
-    typedef struct ImGuiWindowTempData ImGuiWindowTempData;
-    typedef struct ImGuiWindowSettings ImGuiWindowSettings;
+    struct ImDrawChannel;
+    struct ImDrawCmd;
+    struct ImDrawData;
+    struct ImDrawList;
+    struct ImDrawListSharedData;
+    struct ImDrawListSplitter;
+    struct ImDrawVert;
+    struct ImFont;
+    struct ImFontAtlas;
+    struct ImFontBuilderIO;
+    struct ImFontConfig;
+    struct ImFontGlyph;
+    struct ImFontGlyphRangesBuilder;
+    struct ImColor;
+    struct ImGuiContext;
+    struct ImGuiIO;
+    struct ImGuiInputTextCallbackData;
+    struct ImGuiKeyData;
+    struct ImGuiListClipper;
+    struct ImGuiOnceUponAFrame;
+    struct ImGuiPayload;
+    struct ImGuiPlatformIO;
+    struct ImGuiPlatformMonitor;
+    struct ImGuiPlatformImeData;
+    struct ImGuiSizeCallbackData;
+    struct ImGuiStorage;
+    struct ImGuiStyle;
+    struct ImGuiTableSortSpecs;
+    struct ImGuiTableColumnSortSpecs;
+    struct ImGuiTextBuffer;
+    struct ImGuiTextFilter;
+    struct ImGuiViewport;
+    struct ImGuiWindowClass;
+    struct ImBitVector;
+    struct ImRect;
+    struct ImDrawDataBuilder;
+    struct ImGuiColorMod;
+    struct ImGuiContextHook;
+    struct ImGuiDataVarInfo;
+    struct ImGuiDataTypeInfo;
+    struct ImGuiDockContext;
+    struct ImGuiDockRequest;
+    struct ImGuiDockNode;
+    struct ImGuiDockNodeSettings;
+    struct ImGuiGroupData;
+    struct ImGuiInputTextState;
+    struct ImGuiInputTextDeactivateData;
+    struct ImGuiLastItemData;
+    struct ImGuiLocEntry;
+    struct ImGuiMenuColumns;
+    struct ImGuiNavItemData;
+    struct ImGuiNavTreeNodeData;
+    struct ImGuiMetricsConfig;
+    struct ImGuiNextWindowData;
+    struct ImGuiNextItemData;
+    struct ImGuiOldColumnData;
+    struct ImGuiOldColumns;
+    struct ImGuiPopupData;
+    struct ImGuiSettingsHandler;
+    struct ImGuiStackSizes;
+    struct ImGuiStyleMod;
+    struct ImGuiTabBar;
+    struct ImGuiTabItem;
+    struct ImGuiTable;
+    struct ImGuiTableHeaderData;
+    struct ImGuiTableColumn;
+    struct ImGuiTableInstanceData;
+    struct ImGuiTableTempData;
+    struct ImGuiTableSettings;
+    struct ImGuiTableColumnsSettings;
+    struct ImGuiTypingSelectState;
+    struct ImGuiTypingSelectRequest;
+    struct ImGuiWindow;
+    struct ImGuiWindowDockStyle;
+    struct ImGuiWindowTempData;
+    struct ImGuiWindowSettings;
     typedef struct ImVector_const_charPtr {
         int Size;
         int Capacity;
@@ -473,7 +473,7 @@ namespace ImGuiMCP {
     typedef void* (*ImGuiMemAllocFunc)(size_t sz, void* user_data);
     typedef void (*ImGuiMemFreeFunc)(void* ptr, void* user_data);
 
-    typedef struct ImVec4 ImVec4;
+    struct ImVec4;
     struct ImVec4 {
         float x, y, z, w;
     };
@@ -1408,7 +1408,7 @@ namespace ImGuiMCP {
         const char* b;
         const char* e;
     };
-    typedef struct ImGuiTextRange ImGuiTextRange;
+    struct ImGuiTextRange;
 
     typedef struct ImVector_ImGuiTextRange {
         int Size;
@@ -1465,7 +1465,7 @@ namespace ImGuiMCP {
         }
     };
 
-    typedef struct ImGuiTextRange ImGuiTextRange;
+    struct ImGuiTextRange;
     typedef struct ImVector_char {
         int Size;
         int Capacity;
@@ -1483,7 +1483,7 @@ namespace ImGuiMCP {
             void* val_p;
         };
     };
-    typedef struct ImGuiStoragePair ImGuiStoragePair;
+    struct ImGuiStoragePair;
 
     typedef struct ImVector_ImGuiStoragePair {
         int Size;
@@ -1494,7 +1494,7 @@ namespace ImGuiMCP {
     struct ImGuiStorage {
         ImVector_ImGuiStoragePair Data;
     };
-    typedef struct ImGuiStoragePair ImGuiStoragePair;
+    struct ImGuiStoragePair;
     struct ImGuiListClipper {
         ImGuiContext* Ctx;
         int DisplayStart;
@@ -1522,7 +1522,7 @@ namespace ImGuiMCP {
         ImVec2 uv;
         ImU32 col;
     };
-    typedef struct ImDrawCmdHeader ImDrawCmdHeader;
+    struct ImDrawCmdHeader;
     struct ImDrawCmdHeader {
         ImVec4 ClipRect;
         ImTextureID TextureId;
@@ -1676,7 +1676,7 @@ namespace ImGuiMCP {
     struct ImFontGlyphRangesBuilder {
         ImVector_ImU32 UsedChars;
     };
-    typedef struct ImFontAtlasCustomRect ImFontAtlasCustomRect;
+    struct ImFontAtlasCustomRect;
     struct ImFontAtlasCustomRect {
         unsigned short Width, Height;
         unsigned short X, Y;
@@ -1918,21 +1918,21 @@ namespace ImGuiMCP {
     typedef int ImGuiWindowRefreshFlags;
     typedef void (*ImGuiErrorLogCallback)(void* user_data, const char* fmt, ...);
     extern ImGuiContext* GImGui;
-    typedef struct StbUndoRecord StbUndoRecord;
+    struct StbUndoRecord;
     struct StbUndoRecord {
         int where;
         int insert_length;
         int delete_length;
         int char_storage;
     };
-    typedef struct StbUndoState StbUndoState;
+    struct StbUndoState;
     struct StbUndoState {
         StbUndoRecord undo_rec[99];
         ImWchar undo_char[999];
         short undo_point, redo_point;
         int undo_char_point, redo_char_point;
     };
-    typedef struct STB_TexteditState STB_TexteditState;
+    struct STB_TexteditState;
     struct STB_TexteditState {
         int cursor;
         int select_start;
@@ -1947,7 +1947,7 @@ namespace ImGuiMCP {
         float preferred_x;
         StbUndoState undostate;
     };
-    typedef struct StbTexteditRow StbTexteditRow;
+    struct StbTexteditRow;
     struct StbTexteditRow {
         float x0, x1;
         float baseline_y_delta;
@@ -1955,11 +1955,11 @@ namespace ImGuiMCP {
         int num_chars;
     };
     typedef FILE* ImFileHandle;
-    typedef struct ImVec1 ImVec1;
+    struct ImVec1;
     struct ImVec1 {
         float x;
     };
-    typedef struct ImVec2ih ImVec2ih;
+    struct ImVec2ih;
     struct ImVec2ih {
         short x, y;
     };
@@ -1972,7 +1972,7 @@ namespace ImGuiMCP {
         ImVector_ImU32 Storage;
     };
     typedef int ImPoolIdx;
-    typedef struct ImGuiTextIndex ImGuiTextIndex;
+    struct ImGuiTextIndex;
     typedef struct ImVector_int {
         int Size;
         int Capacity;
@@ -2006,7 +2006,7 @@ namespace ImGuiMCP {
         ImU32 Count;
         ImU32 Offset;
     };
-    typedef struct ImGuiDataTypeStorage ImGuiDataTypeStorage;
+    struct ImGuiDataTypeStorage;
     struct ImGuiDataTypeStorage {
         ImU8 Data[8];
     };
@@ -2158,7 +2158,7 @@ namespace ImGuiMCP {
             float BackupFloat[2];
         };
     };
-    typedef struct ImGuiComboPreviewData ImGuiComboPreviewData;
+    struct ImGuiComboPreviewData;
     struct ImGuiComboPreviewData {
         ImRect PreviewRect;
         ImVec2 BackupCursorPos;
@@ -2192,7 +2192,7 @@ namespace ImGuiMCP {
         ImU16 OffsetMark;
         ImU16 Widths[4];
     };
-    typedef struct ImGuiInputTextDeactivatedState ImGuiInputTextDeactivatedState;
+    struct ImGuiInputTextDeactivatedState;
     struct ImGuiInputTextDeactivatedState {
         ImGuiID ID;
         ImVector_char TextA;
@@ -2308,20 +2308,20 @@ namespace ImGuiMCP {
         short SizeOfBeginPopupStack;
         short SizeOfDisabledStack;
     };
-    typedef struct ImGuiWindowStackData ImGuiWindowStackData;
+    struct ImGuiWindowStackData;
     struct ImGuiWindowStackData {
         ImGuiWindow* Window;
         ImGuiLastItemData ParentLastItemDataBackup;
         ImGuiStackSizes StackSizesOnBegin;
         bool DisabledOverrideReenable;
     };
-    typedef struct ImGuiShrinkWidthItem ImGuiShrinkWidthItem;
+    struct ImGuiShrinkWidthItem;
     struct ImGuiShrinkWidthItem {
         int Index;
         float Width;
         float InitialWidth;
     };
-    typedef struct ImGuiPtrOrIndex ImGuiPtrOrIndex;
+    struct ImGuiPtrOrIndex;
     struct ImGuiPtrOrIndex {
         void* Ptr;
         int Index;
@@ -2364,41 +2364,41 @@ namespace ImGuiMCP {
         ImGuiInputSource_Gamepad,
         ImGuiInputSource_COUNT
     } ImGuiInputSource;
-    typedef struct ImGuiInputEventMousePos ImGuiInputEventMousePos;
+    struct ImGuiInputEventMousePos;
     struct ImGuiInputEventMousePos {
         float PosX, PosY;
         ImGuiMouseSource MouseSource;
     };
-    typedef struct ImGuiInputEventMouseWheel ImGuiInputEventMouseWheel;
+    struct ImGuiInputEventMouseWheel;
     struct ImGuiInputEventMouseWheel {
         float WheelX, WheelY;
         ImGuiMouseSource MouseSource;
     };
-    typedef struct ImGuiInputEventMouseButton ImGuiInputEventMouseButton;
+    struct ImGuiInputEventMouseButton;
     struct ImGuiInputEventMouseButton {
         int Button;
         bool Down;
         ImGuiMouseSource MouseSource;
     };
-    typedef struct ImGuiInputEventMouseViewport ImGuiInputEventMouseViewport;
+    struct ImGuiInputEventMouseViewport;
     struct ImGuiInputEventMouseViewport {
         ImGuiID HoveredViewportID;
     };
-    typedef struct ImGuiInputEventKey ImGuiInputEventKey;
+    struct ImGuiInputEventKey;
     struct ImGuiInputEventKey {
         ImGuiKey Key;
         bool Down;
         float AnalogValue;
     };
-    typedef struct ImGuiInputEventText ImGuiInputEventText;
+    struct ImGuiInputEventText;
     struct ImGuiInputEventText {
         unsigned int Char;
     };
-    typedef struct ImGuiInputEventAppFocused ImGuiInputEventAppFocused;
+    struct ImGuiInputEventAppFocused;
     struct ImGuiInputEventAppFocused {
         bool Focused;
     };
-    typedef struct ImGuiInputEvent ImGuiInputEvent;
+    struct ImGuiInputEvent;
     struct ImGuiInputEvent {
         ImGuiInputEventType Type;
         ImGuiInputSource Source;
@@ -2415,7 +2415,7 @@ namespace ImGuiMCP {
         bool AddedByTestEngine;
     };
     typedef ImS16 ImGuiKeyRoutingIndex;
-    typedef struct ImGuiKeyRoutingData ImGuiKeyRoutingData;
+    struct ImGuiKeyRoutingData;
     struct ImGuiKeyRoutingData {
         ImGuiKeyRoutingIndex NextEntryIndex;
         ImU16 Mods;
@@ -2424,7 +2424,7 @@ namespace ImGuiMCP {
         ImGuiID RoutingCurr;
         ImGuiID RoutingNext;
     };
-    typedef struct ImGuiKeyRoutingTable ImGuiKeyRoutingTable;
+    struct ImGuiKeyRoutingTable;
     typedef struct ImVector_ImGuiKeyRoutingData {
         int Size;
         int Capacity;
@@ -2436,7 +2436,7 @@ namespace ImGuiMCP {
         ImVector_ImGuiKeyRoutingData Entries;
         ImVector_ImGuiKeyRoutingData EntriesNext;
     };
-    typedef struct ImGuiKeyOwnerData ImGuiKeyOwnerData;
+    struct ImGuiKeyOwnerData;
     struct ImGuiKeyOwnerData {
         ImGuiID OwnerCurr;
         ImGuiID OwnerNext;
@@ -2477,7 +2477,7 @@ namespace ImGuiMCP {
         ImGuiInputFlags_SupportedBySetKeyOwner = ImGuiInputFlags_LockThisFrame | ImGuiInputFlags_LockUntilRelease,
         ImGuiInputFlags_SupportedBySetItemKeyOwner = ImGuiInputFlags_SupportedBySetKeyOwner | ImGuiInputFlags_CondMask_,
     } ImGuiInputFlagsPrivate_;
-    typedef struct ImGuiListClipperRange ImGuiListClipperRange;
+    struct ImGuiListClipperRange;
     struct ImGuiListClipperRange {
         int Min;
         int Max;
@@ -2485,7 +2485,7 @@ namespace ImGuiMCP {
         ImS8 PosToIndexOffsetMin;
         ImS8 PosToIndexOffsetMax;
     };
-    typedef struct ImGuiListClipperData ImGuiListClipperData;
+    struct ImGuiListClipperData;
     typedef struct ImVector_ImGuiListClipperRange {
         int Size;
         int Capacity;
@@ -2560,7 +2560,7 @@ namespace ImGuiMCP {
         float DistAxial;
         ImGuiSelectionUserData SelectionUserData;
     };
-    typedef struct ImGuiFocusScopeData ImGuiFocusScopeData;
+    struct ImGuiFocusScopeData;
     struct ImGuiFocusScopeData {
         ImGuiID ID;
         ImGuiID WindowID;
@@ -2743,7 +2743,7 @@ namespace ImGuiMCP {
         ImVector_ImGuiDockNodeSettings NodesSettings;
         bool WantFullRebuild;
     };
-    typedef struct ImGuiViewportP ImGuiViewportP;
+    struct ImGuiViewportP;
     struct ImGuiViewportP {
         ImGuiViewport _ImGuiViewport;
         ImGuiWindow* Window;
@@ -2831,13 +2831,13 @@ namespace ImGuiMCP {
         ImGuiDebugLogFlags_OutputToTTY = 1 << 20,
         ImGuiDebugLogFlags_OutputToTestEngine = 1 << 21,
     } ImGuiDebugLogFlags_;
-    typedef struct ImGuiDebugAllocEntry ImGuiDebugAllocEntry;
+    struct ImGuiDebugAllocEntry;
     struct ImGuiDebugAllocEntry {
         int FrameCount;
         ImS16 AllocCount;
         ImS16 FreeCount;
     };
-    typedef struct ImGuiDebugAllocInfo ImGuiDebugAllocInfo;
+    struct ImGuiDebugAllocInfo;
     struct ImGuiDebugAllocInfo {
         int TotalAllocCount;
         int TotalFreeCount;
@@ -2860,7 +2860,7 @@ namespace ImGuiMCP {
         int HighlightMonitorIdx;
         ImGuiID HighlightViewportID;
     };
-    typedef struct ImGuiStackLevelInfo ImGuiStackLevelInfo;
+    struct ImGuiStackLevelInfo;
     struct ImGuiStackLevelInfo {
         ImGuiID ID;
         ImS8 QueryFrameCount;
@@ -2868,7 +2868,7 @@ namespace ImGuiMCP {
         ImGuiDataType DataType : 8;
         char Desc[57];
     };
-    typedef struct ImGuiIDStackTool ImGuiIDStackTool;
+    struct ImGuiIDStackTool;
     typedef struct ImVector_ImGuiStackLevelInfo {
         int Size;
         int Capacity;
@@ -3611,7 +3611,7 @@ namespace ImGuiMCP {
         ImU8 SortDirectionsAvailMask : 4;
         ImU8 SortDirectionsAvailList;
     };
-    typedef struct ImGuiTableCellData ImGuiTableCellData;
+    struct ImGuiTableCellData;
     struct ImGuiTableCellData {
         ImU32 BgColor;
         ImGuiTableColumnIdx Column;
@@ -3793,7 +3793,7 @@ namespace ImGuiMCP {
         float HostBackupItemWidth;
         int HostBackupItemWidthStackSize;
     };
-    typedef struct ImGuiTableColumnSettings ImGuiTableColumnSettings;
+    struct ImGuiTableColumnSettings;
     struct ImGuiTableColumnSettings {
         float WidthOrWeight;
         ImGuiID UserID;
